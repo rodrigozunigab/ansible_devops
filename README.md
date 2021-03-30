@@ -1,4 +1,5 @@
 tarea de ansible del grupo 1 del diplomado de devops
+
 1.- crear la maquina con el vagrantfile
     vagrant up    
 
