@@ -52,6 +52,10 @@
       become_method: su
       become_user: vagrant
 
+    - name: espera creacion de archivo con clave inicial
+      wait_for:
+        path: "{{ jenkins.jenkins_fileAdmin }}"
+
     - name: obtener clave inicial
       shell: cat  "{{ jenkins.jenkins_fileAdmin }}"
       changed_when: false
