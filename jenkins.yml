@@ -38,7 +38,7 @@
       get_url: url="{{ jenkins.jenkins_url }}" dest="{{ jenkins.jenkins_home }}" validate_certs=false
 
 
-    - name: fix permissions
+    - name: arreglar permisos
       file:
         path: "{{ jenkins.jenkins_home }}"
         owner: "{{ jenkins.jenkins_owner }}"
